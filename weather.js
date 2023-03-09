@@ -3,7 +3,7 @@ const API_KEY = "c75a16b0fcfc4f98a1a34b29ed15d23c";
 function onSuccess(position) {
   const lat = position.coords.latitude; //위도
   const long = position.coords.longitude; //경도
-  const url = `https:api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`;
   console.log(lat);
   console.log(long);
   console.log("You live in", lat, long);
